@@ -1,0 +1,23 @@
+[alias]
+	aa = add -A
+	br = branch
+	ci = commit
+	co = checkout
+	lg = log --oneline
+	st = status
+[branch]
+	sort = -committerdate
+[column]
+	ui = auto
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	process = git-lfs filter-process
+	smudge = git-lfs smudge -- %f
+	required = true
+[push]
+	autoSetupRemote = true
+[includeIf "gitdir:~/personal/"]
+	path = ~/personal/.gitconfig
+[includeIf "gitdir:~/work/"]
+	path = ~/work/.gitconfig
+
