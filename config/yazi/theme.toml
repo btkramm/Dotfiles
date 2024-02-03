@@ -1,0 +1,12 @@
+[mode]
+normal_main = { fg = '#0a0c10', bg = '#71b7ff' } 
+select_main = { fg = '#0a0c10', bg = '#f0b72f' }
+unset_main  = { fg = '#0a0c10', bg = '#26cd4d' }
+
+normal_alt = { fg = '#48739f', bg = '#0b0e12' } 
+select_alt = { fg = '#c29529', bg = '#382e16' }
+unset_alt  = { fg = '#1b8035', bg = '#0a0e11' }
+
+[status]
+separator_open  = ""
+separator_close = ""
