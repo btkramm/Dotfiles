@@ -1,0 +1,111 @@
+prSections:
+  - title: Awaiting review from me
+    filters: is:open review-requested:@me
+
+  - title: My Pull Requests
+    filters: is:open author:@me
+
+  - title: Involved
+    filters: is:open involves:@me -author:@me
+
+issuesSections:
+  - title: My Issues
+    filters: is:open project:fintual/37 assignee:@me
+
+  - title: Involved
+    filters: is:open involves:@me -author:@me
+
+repo:
+  branchesRefetchIntervalSeconds: 30
+  prsRefetchIntervalSeconds: 60
+
+defaults:
+  view: prs
+
+  prsLimit: 20
+  issuesLimit: 20
+
+  preview:
+    open: true
+    width: 80
+
+  layout:
+    prs:
+      updatedAt:
+        width: 5
+      repo:
+        width: 20
+      author:
+        width: 15
+      assignees:
+        width: 20
+        hidden: true
+      base:
+        width: 15
+        hidden: true
+      lines:
+        width: 15
+
+    issues:
+      updatedAt:
+        width: 5
+      repo:
+        width: 15
+      creator:
+        width: 10
+      assignees:
+        width: 20
+        hidden: true
+
+  refetchIntervalMinutes: 30
+
+keybindings:
+  prs:
+    - key: O
+      command: >
+        kitty @ launch --type=tab --tab-title="#{{.PrNumber}}" --cwd={{.RepoPath}} nvim -c ":Octo pr edit {{.PrNumber}}"
+      context: pr
+    - key: d
+      command: >
+        kitty @ launch --type=tab --tab-title="#{{.PrNumber}}" --cwd={{.RepoPath}} nvim -c ":Octo pr diff {{.PrNumber}}"
+      context: pr
+
+repoPaths:
+  {
+    fintual/design-system: ~/work/design-system,
+    fintual/mobile-app: ~/work/mobile-app,
+    fintual/web-app: ~/work/web-app,
+  }
+
+theme:
+  ui:
+    sectionsShowCount: true
+
+    table:
+      showSeparator: false
+      compact: true
+
+  colors:
+    text:
+      primary: "#F0F3F6"
+      secondary: "#D9DEE3"
+      faint: "#9eA7B3"
+
+      inverted: "#0A0C10"
+
+      success: "#26CD4D"
+      warning: "#E09B13"
+      error: "#FF6A69"
+
+    background:
+      selected: "#7A828E"
+
+    border:
+      primary: "#BDC4CC"
+      secondary: "#7A828e"
+      faint: "#7A828E"
+
+pager:
+  diff: ""
+
+confirmQuit: true
