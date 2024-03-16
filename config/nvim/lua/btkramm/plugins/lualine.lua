@@ -1,6 +1,8 @@
 return {
   'nvim-lualine/lualine.nvim',
   config = function()
+    local noirbuddy_lualine = require('noirbuddy.plugins.lualine')
+
     require('lualine').setup({
       sections = {
         lualine_a = {},
@@ -33,6 +35,8 @@ return {
       options = {
         component_separators = '',
         section_separators = '',
+
+        theme = noirbuddy_lualine.theme,
       },
     })
   end,
