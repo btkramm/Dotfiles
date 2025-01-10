@@ -16,7 +16,7 @@ function zvm_after_init() {
   source $(brew --prefix)/opt/fzf/shell/key-bindings.zsh
 }
 
-# Modules ---------------------------------------------------------------------
+# /modules/ -------------------------------------------------------------------
 
 source /Users/btkramm/personal/dotfiles/main/config/zsh/modules/aliases.sh
 source /Users/btkramm/personal/dotfiles/main/config/zsh/modules/android.sh
