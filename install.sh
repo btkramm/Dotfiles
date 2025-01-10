@@ -18,6 +18,7 @@ fi
 
 # Zsh -------------------------------------------------------------------------
 
+brew install zsh-autosuggestions # zsh-autosuggestions
 brew install zsh-syntax-highlighting # zsh-syntax-highlighting
 brew install zsh-vi-mode # zsh-vi-mode
 
