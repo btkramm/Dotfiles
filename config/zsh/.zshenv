@@ -6,4 +6,6 @@ export SAVEHIST=10000
 export EDITOR="nvim"
 export VISUAL="nvim"
 
+export MANPAGER='nvim +Man!'
+
 [[ -f "$ZDOTDIR/modules/secrets.sh" ]] && source "$ZDOTDIR/modules/secrets.sh"
