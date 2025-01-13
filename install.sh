@@ -22,13 +22,6 @@ brew install zsh-autosuggestions # zsh-autosuggestions
 brew install zsh-syntax-highlighting # zsh-syntax-highlighting
 brew install zsh-vi-mode # zsh-vi-mode
 
-# GitHub CLI ------------------------------------------------------------------
-
-brew install gh # gh
-
-gh extension install benelan/gh-fzf # gh-fzf
-gh extension install dlvhdr/gh-dash # gh-dash
-
 # yabai & skhd ----------------------------------------------------------------
 
 brew install koekeishiya/formulae/skhd # skhd
@@ -58,6 +51,7 @@ brew install direnv # direnv
 brew install eza # eza
 brew install fd # fd
 brew install fzf # fzf
+brew install gh # gh
 brew install jq # jq
 brew install nmap # nmap
 brew install ripgrep # ripgrep
