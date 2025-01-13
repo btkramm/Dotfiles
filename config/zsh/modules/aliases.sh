@@ -1,7 +1,5 @@
 alias cd="z"
 
-alias date=gdate
-
 alias ls="eza"
 
 alias ssh="kitten ssh"
