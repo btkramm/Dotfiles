@@ -19,6 +19,6 @@ function preview() {
 	| first' "$all_prs_json_path"
     )
 
-    glow <<< "$body"
+    bat -n --color=always <<< "$body"
   fi
 }

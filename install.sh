@@ -49,7 +49,6 @@ brew install fd # fd
 brew install fnm # fnm
 brew install fzf # fzf
 brew install gh # gh
-brew install glow # glow
 brew install jq # jq
 brew install nmap # nmap
 brew install ripgrep # ripgrep
