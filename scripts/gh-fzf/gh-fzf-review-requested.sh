@@ -60,4 +60,9 @@ echo "$prs_as_columns" | fzf \
     source $DIRNAME/lib/open_in_web.sh;
 
     open_in_web {} \"$prs_json_path\"
+  )" \
+  --bind "ctrl-d:execute(
+    source $DIRNAME/lib/diff.sh;
+
+    diff {} \"$prs_json_path\"
   )"
