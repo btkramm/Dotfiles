@@ -10,9 +10,13 @@ return {
         around_next = 'an',
         inside_next = 'in',
       },
+
+      silent = true,
     })
 
-    require('mini.jump').setup()
+    require('mini.jump').setup({
+      silent = true,
+    })
 
     require('mini.surround').setup({
       mappings = {
@@ -20,6 +24,8 @@ return {
 
         suffix_next = 'n',
       },
+
+      silent = true,
     })
   end,
 }
