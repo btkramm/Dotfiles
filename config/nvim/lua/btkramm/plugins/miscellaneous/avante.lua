@@ -1,10 +1,5 @@
 return {
   'yetone/avante.nvim',
-  version = false,
-  build = 'make',
-  event = 'VeryLazy',
-  lazy = false,
-
   dependencies = {
     'nvim-treesitter/nvim-treesitter',
 
@@ -15,13 +10,15 @@ return {
 
     {
       'MeanderingProgrammer/render-markdown.nvim',
-      ft = { 'markdown', 'Avante' },
+      ft = { 'Avante' },
 
       opts = {
-        file_types = { 'markdown', 'Avante' },
+        file_types = { 'Avante' },
       },
     },
   },
+  build = 'make',
+  lazy = false,
 
   opts = {
     behaviour = {
