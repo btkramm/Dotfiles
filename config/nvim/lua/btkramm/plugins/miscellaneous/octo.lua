@@ -7,8 +7,6 @@ return {
   },
   lazy = false,
 
-  config = true,
-
   opts = {
     use_local_fs = true,
 

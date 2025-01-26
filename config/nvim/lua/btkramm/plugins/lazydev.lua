@@ -2,6 +2,7 @@ return {
   {
     'folke/lazydev.nvim',
     ft = 'lua',
+
     opts = {
       library = {
         { path = 'luvit-meta/library', words = { 'vim%.uv' } },
@@ -10,6 +11,7 @@ return {
   },
   {
     'hrsh7th/nvim-cmp',
+
     opts = function(_, opts)
       opts.sources = opts.sources or {}
 
