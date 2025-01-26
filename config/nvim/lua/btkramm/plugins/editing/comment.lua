@@ -1,7 +1,6 @@
 return {
   'numToStr/Comment.nvim',
   dependencies = { 'JoosepAlviste/nvim-ts-context-commentstring' },
-  event = 'InsertEnter',
 
   config = function()
     ---@diagnostic disable: missing-fields
