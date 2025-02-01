@@ -1,12 +1,18 @@
-[mode]
-normal_main = { fg = '#0a0c10', bg = '#71b7ff' } 
-select_main = { fg = '#0a0c10', bg = '#f0b72f' }
-unset_main  = { fg = '#0a0c10', bg = '#26cd4d' }
+[manager]
+cwd = { fg = "red" } 
 
-normal_alt = { fg = '#48739f', bg = '#0b0e12' } 
-select_alt = { fg = '#c29529', bg = '#382e16' }
-unset_alt  = { fg = '#1b8035', bg = '#0a0e11' }
+[mode]
+normal_main = { fg = '#0a0c10', bg = 'blue' } 
+select_main = { fg = '#0a0c10', bg = 'yellow' }
+unset_main  = { fg = '#0a0c10', bg = 'green' }
+
+normal_alt  = { fg = '#0a0c10', bg = 'blue', reversed = true} 
+select_alt  = { fg = '#0a0c10', bg = 'yellow', reversed = true }
+unset_alt   = { fg = '#0a0c10', bg = 'green', reversed = true }
 
 [status]
 separator_open  = ""
 separator_close = ""
+
+[filetype]
+rules = [{ name = "*/", fg = "white" }]
