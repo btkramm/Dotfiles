@@ -1,0 +1,7 @@
+[[manager.prepend_keymap]]
+on   = [ "<D-g>" ]
+run  = 'search --via=rg'
+
+[[manager.prepend_keymap]]
+on   = [ "<D-p>" ]
+run  = 'search --via=fd'
