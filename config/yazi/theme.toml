@@ -14,5 +14,8 @@ unset_alt   = { fg = '#0a0c10', bg = 'green', reversed = true }
 separator_open  = ""
 separator_close = ""
 
+[input]
+border = { fg = 'white' }
+
 [filetype]
 rules = [{ name = "*/", fg = "white" }]

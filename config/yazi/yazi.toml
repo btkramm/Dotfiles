@@ -7,3 +7,6 @@ run  = "git"
 id   = "git"
 name = "*/"
 run  = "git"
+
+[input]
+search_title = "Search ({n})"
