@@ -1,3 +1,5 @@
+export XDG_CONFIG_HOME="$HOME/.config"
+
 export ZDOTDIR="$HOME/.config/zsh"
 
 export HISTSIZE=10000
