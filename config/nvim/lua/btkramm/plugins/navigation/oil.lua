@@ -20,7 +20,8 @@ return {
         opts = { vertical = true, split = 'belowright' },
       },
 
-      ['<Esc><Esc>'] = 'actions.close',
+      ['<Esc>'] = 'actions.close',
+      ['q'] = 'actions.close',
 
       ['-'] = 'actions.parent',
       ['_'] = 'actions.open_cwd',
