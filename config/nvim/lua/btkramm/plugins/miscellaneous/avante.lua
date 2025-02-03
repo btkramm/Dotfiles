@@ -39,6 +39,7 @@ return {
     mappings = {
       submit = { insert = '<C-CR>', normal = '<CR>' },
       suggestion = { accept = '<M-Tab>', next = '<M-]>', prev = '<M-[>', reject = '<M-Esc>' },
+      sidebar = { close = 'q' },
     },
     windows = {
       sidebar_header = { enabled = false },
