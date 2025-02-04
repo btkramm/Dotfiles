@@ -24,7 +24,7 @@ return {
     behaviour = {
       auto_focus_sidebar = true,
 
-      auto_suggestions = false,
+      auto_suggestions = true,
 
       auto_set_highlight_group = true,
 
