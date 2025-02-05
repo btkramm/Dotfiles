@@ -3,6 +3,8 @@ return {
   lazy = false,
 
   opts = {
+    default_file_explorer = true,
+
     skip_confirm_for_simple_edits = true,
 
     lsp_file_methods = { enabled = true, timeout_ms = 2000, autosave_changes = true },
